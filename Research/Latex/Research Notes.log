@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.2.7)  19 FEB 2022 12:04
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.2.7)  19 FEB 2022 16:26
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -541,7 +541,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 498--500
 
  []
 
-[16] [17] [18] [19] [20] (./Research Notes.aux)
+[16] [17] [18] [19]
+Underfull \hbox (badness 10000) in paragraph at lines 671--674
+
+ []
+
+[20]
+Missing character: There is no ∆ (U+2206) in font [lmroman12-regular]:mapping=tex-text;!
+
+Underfull \hbox (badness 10000) in paragraph at lines 680--683
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 684--686
+
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 687--690
+
+ []
+
+[22] (./Research Notes.aux)
 Package rerunfilecheck Info: File `"Research Notes".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
  ) 
@@ -552,6 +574,6 @@ Here is how much of TeX's memory you used:
  33410 multiletter control sequences out of 15000+600000
  486651 words of font info for 108 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 60i,16n,64p,529b,1969s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,16n,64p,680b,1969s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Research Notes.xdv (20 pages, 584624 bytes).
+Output written on Research Notes.xdv (22 pages, 617888 bytes).
