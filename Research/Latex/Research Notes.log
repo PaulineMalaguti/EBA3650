@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.2.7)  19 FEB 2022 11:06
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.2.7)  19 FEB 2022 12:04
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -536,7 +536,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 473--475
 
  []
 
-[14] [15] [16] [17] [18] [19] [20] (./Research Notes.aux)
+[14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 498--500
+
+ []
+
+[16] [17] [18] [19] [20] (./Research Notes.aux)
 Package rerunfilecheck Info: File `"Research Notes".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
  ) 
@@ -549,4 +554,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  60i,16n,64p,529b,1969s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Research Notes.xdv (20 pages, 584232 bytes).
+Output written on Research Notes.xdv (20 pages, 584624 bytes).
