@@ -60,7 +60,7 @@
 
 \maketitle
 
-This file was created to contain explanations and code examples for the course Quantitative Economics.
+This file was created to contain explanations and code examples for the course EBA3650 Quantitative Economics at BI Norwegian Business School.
 
 \tableofcontents
 
@@ -467,5 +467,189 @@ demanded to fall as own-prices rises. \\
 Slutsky's decomposition of the effect of a price change into a pure substitution effect and an income effect thus explains why the law of downwards-slopping
 demand is violated for extremely income-inferior goods.  
 
+\section{Microeconomy}
+\subsection{The intertemporal utility function}
+A plan for consumption in the periods $0, 1, ... , T-1$ is denoted ${c_t}^{T-1}_{t=0}$, where $c_t$ is the consumption in period $t$. We say the plan has \underline{time horizon T}. 
+Period 0 (‘the initial period’) need not refer to the ‘birth’ of the household but is just an arbitrary period within the lifetime of the household . \\
+
+We assume that preferences of a household/consumer can be represented by a time-separable intertemporal utility function with a constant utility discount rate and no utility from 
+leisure (the latter assumption implies that the labour supply curve of the household in each period is inelastic, ie whatever the changes of prices of labour and leisure the supply of labour stays the same). 
+The time-separability itself just means that the intertemporal utility funciton is additive.  \\ 
+In addition, we assume geometric utility discounting, meaning that utility obtained $t$ periods ahead is converted into a present equivalent by multiplying by the discount factor $(1 + q)^{-t}$, where $q$ 
+is a constant utility discount rate. Hence, $u_t(c_t) = u(c_t)(1 + q)^{-t} $, where $u(c)$ is a time-independent period utility function. Together, these two assumptions amount to
+$$ U(c_0, c_1, ..., c_{T-1}) = u(c_0) + \frac{u(c_1)}{(1+q)} + ... +  \frac{u(c_{T -1})}{(1+q)^{T-1}} = \sum_{t = 0}^{T - 1} \frac{u(c_{t})}{(1+q)^{t}} $$
+
+The period utility function is assumed to satisfy $u'(c) > 0 $ and $u''(c) < 0 $.  \\ 
+The number $ 1 + q$ tells how many units of utility in the next period the household insists on "in return" for a decrease of one unit of utility in the current period. 
+So, a $q > 0$ will reflect that if the chosen level of consumption is the same in two periods, then the individual always appreciates a marginal unit of consumption higher the earlier it arrives. 
+This explains why $q$ is named the \underline{rate of time preference} or \underline{rate of impatience}. \\ The utility discount factor, $\frac{1}{1+q}^t$, indicates how many units of utility the household is at most willing to give up 
+in period 0 to get one additional unit of utility in period $t$.
+
+Now we assume that the consumer has a utility function over consumption today (time period 0, $t = 0$) and the future (time period 1, $t = 1$). Say, 
+$$ u(c_{t = 0},c_{t = 1}) = c_{t = 0}^{\alpha} + \frac{1}{1+q} * c_{t = 1}^{\alpha} $$ 
+where $\alpha$ is a parameter between 0 and 1, say 0.5, and $q$ is a given number for instance 0.04. 
+The consumer has some income/endowment ($e$ or $I$)in both periods but can also save or borrow money. Savings $s$ is given by 
+$$ s = e_0 - c_{t = 0} $$ 
+and consumption in period 2 is given by 
+$$ c_{t = 1} = e_1 + s \times (1+r)$$ 
+where $r$ is the interest rate ($s$ will be negative if the consumer borrows money.) Since $e_1$ is in tomorrow's money, we have to multiply the savings we bring forward by $(1 + r)$ to We can put this into our 
+numerical framework by substituting for $s$, giving a budget constraint 
+$$ c_{t = 1} = e_1+ (e_0- c_{t = 0}) \times (1+r)$$
+\hfill
+Code: Visualise the changes in consumption combination (indifference curve) when the interest rate varies. 
+\begin{lstlisting}[frame=single]
+def f(rs,arglist):
+    e = arglist[0] ; q = arglist[1]
+    for element in range(len(rs)):
+    r = rs[element]
+
+    def utility(c1, c2):
+        #e = 0.5 ; q = 0.04
+        return np.power(c1,e)+(1/(1+q))*np.power(c2,e)
+
+    def utility_budget(c1, ip_list):
+        I1 = ip_list[0] ; I2 = ip_list[1] ; r = ip_list[2]
+        c2 = I2 + (I1 - c1)*(1+r)
+        return utility(c1, c2)
+        
+    def demand(I1, I2, r):
+        c1 = newton_max(utility_budget, 0.1, [I1, I2, r])
+        c2 = I2 + (I1 - c1)*(1+r)
+        return c1, c2
+
+    def indiff_dist(c2, mylist): 
+        c1 = mylist[0] ; utility_level = mylist[1]
+        utitility_achieved = utility(c1,c2)
+        return utitility_achieved - utility_level
+
+    def indifference(c1, util):
+        return newton_add(indiff_dist, 1, [c1,util])
+
+    def indirect_utility(I1, I2, r):
+        c11, c22 = demand(I1, I2, r)
+        return utility(c11, c22)
+
+    # initialise quantiites of good 1 (x), income (I), and prices of the two goods
+    c1 = np.linspace(1,30,100) ; I1 = 10 ; I2 = 12
+
+    # get indirect utility curve here
+    utility_level = indirect_utility(I1, I2, r)
+    c2 = np.zeros(len(c1))
+
+    for idx in range(len(c1)):
+        c2[idx] = indifference(c1[idx], utility_level)
+
+
+    #Compute the optimal demand for each r
+    dem = []
+    dem= demand(I1,I2,r)    
+
+    # plot and make nice
+    plt.figure(figsize = (6,4)) ; plt.plot(c1, c2, label = f'Indifference curve with r = {np.round(r,2)}')
+    plt.plot(c1, I2 + (I1 - c1)*(1+r), color = 'red', label = 'budget line')
+    plt.scatter(dem[0],dem[1], label = "Optimum demand", color ='black')
+    plt.text(dem[0], dem[1], '({}, {})'.format(np.round(dem[0],2), np.round(dem[1],2)))
+    plt.xlabel('quantity of goods consumed today') ; plt.ylabel('quantity of good s consumed tomorow')
+    plt.legend(loc = 'upper right')
+    plt.title('Evolution of indifference curves when interest rates varie')
+    plt.xlim(0,30) ; plt.ylim(0,30)
+    plt.show()
+
+\end{lstlisting} 
+\hfill
+Code: Visualise Slutsky decomposition to determine consumer's behaviour. 
+\begin{lstlisting}[frame=single]
+    def utility(c1, c2):
+    e = 0.5 ; q = 0.04
+    return np.power(c1,e)+(1/(1+q))*np.power(c2,e)
+
+def utility_budget(c1, ip_list):
+    I1 = ip_list[0] ; I2 = ip_list[1] ; r = ip_list[2]
+    c2 = I2 + (I1 - c1)*(1+r)
+    return utility(c1, c2)
+    
+def demand(I1, I2, r):
+    c1 = newton_max(utility_budget, 0.1, [I1, I2, r])
+    c2 = I2 + (I1 - c1)*(1+r)
+    return c1, c2
+
+def indiff_dist(c2, mylist): 
+    c1 = mylist[0] ; utility_level = mylist[1]
+    utitility_achieved = utility(c1,c2)
+    return utitility_achieved - utility_level
+
+def indifference(c1, util):
+    return newton_add(indiff_dist, 1, [c1,util])
+
+def indirect_utility(I1, I2, r):
+    c11, c22 = demand(I1, I2, r)
+    return utility(c11, c22)
+
+def diff_indirect_utilities(income_to_be_found,longlist):
+    I1 = longlist[0] ; I2 = longlist[1] ; r1 = longlist[2] ; r2 = longlist[3]
+    return indirect_utility(I1, I2, r1) - indirect_utility(I1,income_to_be_found,r2)
+
+# define the parameters
+I1 = 12 ; I2 = 8 ; r1 = 0.1 ; r2 = 0.85
+
+
+# Give optimal income level for period 2 when prices change
+a = newton_add(diff_indirect_utilities, 1, [I1, I2, r1, r2])
+# print(a)
+
+c1 = np.linspace(0.1, 10, 100) # quantity of good today
+
+# plot with the new budget line as well
+plt.figure(figsize = (12, 8))
+
+# budget curve 1 : Before changes
+plt.plot(c1, I2 + (I1 - c1)*(1+r1), color = 'pink', label = 'budget curve 1')
+
+# budget curve2 : After changes
+plt.plot(c1, a + (I1 - c1)*(1+r2), color = 'red', label = 'budget curve with a')
+
+# get the utility levels
+u_bar = indirect_utility(I1, I2, r1) 
+u_bar2 = indirect_utility(I1, I2, r2)
+
+#print(u_bar, u_bar2)
+
+# express utility max as a function of quantity of good tomorrow
+c21 = np.zeros((100,1)) ; c22 = np.zeros((100,1))
+
+for idx in range(len(c1)):
+    c21[idx] = indifference(c1[idx], u_bar)
+    c22[idx] = indifference(c1[idx], u_bar2)
+
+plt.plot(c1, c21, label = 'indifference curve 1', color = 'green') 
+plt.plot(c1, c22, label = 'indifference curve 2', color = 'blue')
+
+# find utility-maximising consumption bundle
+dems1 = demand(I1, I2, r1) ; plt.scatter(dems1[0], dems1[1],s=50,alpha=0.5,color='black')
+dems2 = demand(I1, I2, r2) ; plt.scatter(dems2[0], dems2[1],s=50,alpha=0.5,color='black')
+
+# make nice
+# plt.vlines(dems1[0], 8, 10.5, linestyles = 'dotted', color = 'k')
+# plt.vlines(dems2[0], 8, 10.5, linestyles = 'dotted', color = 'k')
+plt.annotate('A', xy = (dems1[0], dems1[1]), xycoords='data',rotation = 30, size=15)
+plt.annotate('B', xy = (dems2[0], dems2[1]), xycoords='data',rotation = 30, size=15)
+
+plt.vlines(dems1[0],0,dems1[1],linestyles='dotted')
+plt.vlines(dems2[0],0,dems2[1],linestyles='dotted')
+plt.hlines(dems1[1],0,dems1[0], linestyles='dotted')
+plt.hlines(dems2[1],0,dems2[0], linestyles='dotted')
+plt.ylim(0,40) ; plt.xlim(0,10)
+plt.title('Income and Substitution effect: Consequences on consumption in time')
+plt.xlabel('consumption today, c1') ; plt.ylabel('consumption tomorrow, c2')
+plt.legend(loc = 'upper right') 
+
+\end{lstlisting}
+Then to determine the consumer's behaviour you compute the savings for the first period (today). 
+\begin{lstlisting}[frame=single]
+s = I1 - dems1[0]
+# where dems1[0] is the consumer of today's goods
+\end{lstlisting}  
+If the savings are negative then the consumer is a borrower, if savings are positive then the consumer is a saver. 
+To visualise both cases you can play with the values of Incomes (I1 and I2) and the rates (r1 and r2).  
 \end{document}
 

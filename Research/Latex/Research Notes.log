@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.2.7)  15 FEB 2022 13:10
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.2.7)  19 FEB 2022 11:00
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -503,13 +503,13 @@ LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 3.
-)
+ [1
+
+])
 \tf@toc=\write4
 \openout4 = `"Research Notes.toc"'.
 
- [1
-
-] [2]
+ [2]
 Underfull \hbox (badness 10000) in paragraph at lines 69--72
 
  []
@@ -531,17 +531,22 @@ File: ./Curves/C.png Graphic file (type bmp)
 <./Curves/C.png>
 File: ./Curves/S.png Graphic file (type bmp)
 <./Curves/S.png>
- [13] [14] (./Research Notes.aux)
+ [13]
+Underfull \hbox (badness 10000) in paragraph at lines 472--474
+
+ []
+
+[14] [15] [16] [17] [18] [19] [20] (./Research Notes.aux)
 Package rerunfilecheck Info: File `"Research Notes".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
  ) 
 Here is how much of TeX's memory you used:
- 12825 strings out of 476182
- 198888 string characters out of 5813140
+ 12891 strings out of 476182
+ 199623 string characters out of 5813140
  1074158 words of memory out of 5000000
- 33344 multiletter control sequences out of 15000+600000
+ 33410 multiletter control sequences out of 15000+600000
  486651 words of font info for 108 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  60i,16n,64p,529b,1969s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Research Notes.xdv (14 pages, 369524 bytes).
+Output written on Research Notes.xdv (20 pages, 583444 bytes).

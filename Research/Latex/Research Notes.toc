@@ -17,3 +17,5 @@
 \contentsline {subsection}{\numberline {}Normal Goods}{14}{subsection.6.1}%
 \contentsline {subsection}{\numberline {}Income Inferior Goods}{14}{subsection.6.2}%
 \contentsline {subsection}{\numberline {}Griffon Goods}{14}{subsection.6.3}%
+\contentsline {section}{\numberline {}Microeconomy}{14}{section.7}%
+\contentsline {subsection}{\numberline {}The intertemporal utility function}{14}{subsection.7.1}%
