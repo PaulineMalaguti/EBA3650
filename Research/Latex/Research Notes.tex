@@ -10,6 +10,7 @@
 \usepackage{textcomp}
 \usepackage{gensymb, multicol}
 \usepackage{hyperref}
+\usepackage{tcolorbox}
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -690,6 +691,31 @@ In other words, for an inverse demand curve, $p = A - BQ$, the marginal revenue 
 
 \href{https://open.oregonstate.education/intermediatemicroeconomics/chapter/module-15/}{(Source)}
 
+\subsection{Expenditure functions}
+The expenditure function gives the \underline{minimum amount of money} an individual needs to spend to achieve some level of utility, given a utility function and the prices of the available goods. \\
+Say the utility we want to achieve is $\alpha$ for $n$ number of comodities at a price vector $p$. The expenditure function is then:
+$$ e(p, \alpha) = \underset{x \in \geq (\alpha)}{min} p \cdot x$$
+where $ x \in \geq \alpha$ means that we have consumption bundles that give at least the same utility level as $\alpha$. \\
+Properties of the expenditure function :
+\begin{itemize}
+    \item The function is continuous in $p$ and $u$ 
+    \item The function is nondecreasing in $p$ and strictly increasing in $u$ provided $p \gg 0$ 
+    \item The function is concave in $p$
+    \item If the utility function is quasi-concave, the \hyperlink{thesentence}{Shephard's Lemma} can be applied to the expenditure function. 
+\end{itemize}
+
+\begin{tcolorbox}
+    \hypertarget{thesentence}{Shephard's Lemma} \\
+    The lemma states that if the indifference curves of the expenditure or cost function are convex, then the cost minimizing point of a given good $i$ with price $p_i$ is unique. \\ The idea is that a consumer will 
+    buy a unique ideal amount of each item to minimize the price for obtaining a certain level of utility given the price of goods in the market. \href{https://en.wikipedia.org/wiki/Shephard%27s_lemma}{(Source)}
+\end{tcolorbox}
+    
+\href{https://en.wikipedia.org/wiki/Expenditure_function}{(Source)}
+
+\subsection{Hicksian demand function}
+In microeconomics, a consumer's Hicksian demand function or compensated demand function for a good is his quantity demanded as part of the solution to minimizing his expenditure on all goods while delivering a fixed level of utility. \\ Essentially, a Hicksian demand function shows how an 
+economic agent would react to the change in the 
+price of a good, if the agent's income was compensated to guarantee the agent the same utility previous to the change in the price of the good—the agent will remain on the same indifference curve before and after the change in the price of the good.
 
 \end{document}
 
