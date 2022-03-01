@@ -22,3 +22,5 @@
 \contentsline {subsection}{\numberline {}Monopoly}{20}{subsection.7.2}%
 \contentsline {subsection}{\numberline {}Expenditure functions}{22}{subsection.7.3}%
 \contentsline {subsection}{\numberline {}Hicksian demand function}{23}{subsection.7.4}%
+\contentsline {subsection}{\numberline {}Walras's law}{24}{subsection.7.5}%
+\contentsline {subsection}{\numberline {}Edgeworth box}{25}{subsection.7.6}%
