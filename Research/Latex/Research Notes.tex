@@ -2,7 +2,7 @@
 \linespread{1.1}
 \usepackage{listings}             % Include the listings-package
 \usepackage{xcolor}
-\usepackage{graphicx}
+\usepackage{graphicx, wrapfig}
 \usepackage{float}
 \usepackage{amsmath,mathtools,amsthm,amsfonts,amssymb,latexsym,bm}
 \usepackage{mathrsfs}
@@ -423,7 +423,7 @@ Conquences of variations of $r$:
     \includegraphics[width=.3\textwidth]{./Curves/S.png}  
     \caption{Utility Curves}
     \label{fig:Utility Curves} 
-    \end{figure}  
+\end{figure}  
 
 \subsection{Quasilinear Utility Functions}
 Utility function that is independent of the income effect. 
@@ -753,8 +753,26 @@ The excess in demand function is computed by: $$ z(p) = \sum_{i=1}^{n} (x_i(p \c
 The budget constraint here is : $$p \cdot x_i = p \cdot E_i \mbox{ for each } i$$
 The excess in demand can be rewritten as $$ p \cdot z(p) = \sum_{i=1}^{n} (p \cdot x_i(p \cdot E_i) -  p \cdot E_i) $$
 which can be simplified as $$p \cdot z(p) = 0$$
+\href{https://en.wikipedia.org/wiki/Walras%27s_law}{(Source)}
 
 \subsection{Edgeworth box}
+In economics, an Edgeworth box (or Edgeworth-Bowley box), is a graphical representation of a closed market with just two commodities, x and y, and two consumers. 
+The dimensions of the box are the total quantities $\Omega_x$ and $\Omega_y$ of the two goods. \\
+Let the consumers be Octavio and Abby. The top right-hand corner of the box represents the allocation in which Octavio holds all the goods, while the bottom left corresponds to complete ownership by Abby. 
+Points within the box represent ways of allocating the goods between the two consumers.
+Market behaviour will be determined by the consumers' indifference curves. The blue curves in the diagram represent indifference curves for Octavio, and are shown as convex from his viewpoint (i.e. seen from the bottom left). 
+The orange curves apply to Abby, and are convex as seen from the top right. Moving up and to the right increases Octavio's allocation and puts 
+him onto a more desirable indifference curve while placing Abby onto a less desirable one. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.38\textwidth]{./Curves/Edgeworthexample1.png}
+    \caption{An Edgeworth box}
+    \label{fig: An Edgeworth box} 
+\end{figure}  
+Convex indifference curves are considered to be the usual case. 
+They correspond to diminishing returns for each good relative to the other.
+Exchange within the market starts from an initial allocation known as an endowment.
+
 
 \end{document}
 
