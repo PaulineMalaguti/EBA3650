@@ -1,17 +1,17 @@
 # Fdb version 3
-["xdvipdfmx"] 1646131103 "Research Notes.xdv" "Research Notes.pdf" "Research Notes" 1646131105
-  "Research Notes.xdv" 1646131103 691328 19cdcb8e4f9f0b1ca1b4690bb197a6ca "xelatex"
+["xdvipdfmx"] 1646141245 "Research Notes.xdv" "Research Notes.pdf" "Research Notes" 1646141247
+  "Research Notes.xdv" 1646141245 697732 0698d2d0d3389cf42e8dd31b960dedfc "xelatex"
   (generated)
   "Research Notes.pdf"
-["xelatex"] 1646131099 "g:/My Drive/BA3/Second semester/Quantitative Economics/Research/Latex/Research Notes.tex" "Research Notes.xdv" "Research Notes" 1646131105
+["xelatex"] 1646141241 "g:/My Drive/BA3/Second semester/Quantitative Economics/Research/Latex/Research Notes.tex" "Research Notes.xdv" "Research Notes" 1646141247
   "Curves/C.png" 1644675440 2355 d28d2474a014f730e919c76cb2824b5f ""
   "Curves/CD.png" 1644675440 1753 233a6e2bfa8b32859412b278df762f89 ""
   "Curves/Edgeworthexample1.png" 1646129924 55400 3988223289413069731919e4c0e1286d ""
   "Curves/S.png" 1644675440 3123 25cd2d82a6d4de7868b74290853102df ""
-  "Research Notes.aux" 1646131103 4309 694dd8a0c654bf0595175bfc1161b8f8 "xelatex"
-  "Research Notes.out" 1646131103 4065 b9759d3254a8fd57916ba7b2fbfa5d24 "xelatex"
-  "Research Notes.tex" 1646131098 40468 19069699e9dd8ef70f2ec380c6fd2b52 ""
-  "Research Notes.toc" 1646131103 2107 db2dcb1fc7d59b973996240c815a8805 "xelatex"
+  "Research Notes.aux" 1646141245 4309 694dd8a0c654bf0595175bfc1161b8f8 "xelatex"
+  "Research Notes.out" 1646141245 4065 b9759d3254a8fd57916ba7b2fbfa5d24 "xelatex"
+  "Research Notes.tex" 1646141239 41255 f790bf19d224554fa14d0b3aa49f8e9a ""
+  "Research Notes.toc" 1646141245 2107 db2dcb1fc7d59b973996240c815a8805 "xelatex"
   "c:/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1644235735 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1644238214 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1644234647 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -192,7 +192,7 @@
   "c:/texlive/2021/texmf-dist/web2c/texmf.cnf" 1644236190 40042 fe981136cbb5f3715ab1b0e46e3d3892 ""
   "c:/texlive/2021/texmf-var/web2c/xetex/xelatex.fmt" 1644238344 5131883 54eb016d2b7fadd3037cbb8cae1c1131 ""
   "c:/texlive/2021/texmf.cnf" 1644238239 713 e69b156964470283e0530f5060668171 ""
-  "g:/My Drive/BA3/Second semester/Quantitative Economics/Research/Latex/Research Notes.tex" 1646131098 40468 19069699e9dd8ef70f2ec380c6fd2b52 ""
+  "g:/My Drive/BA3/Second semester/Quantitative Economics/Research/Latex/Research Notes.tex" 1646141239 41255 f790bf19d224554fa14d0b3aa49f8e9a ""
   (generated)
   "Research Notes.aux"
   "Research Notes.log"
