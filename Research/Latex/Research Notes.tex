@@ -2,7 +2,7 @@
 \linespread{1.1}
 \usepackage{listings}             % Include the listings-package
 \usepackage{xcolor}
-\usepackage{graphicx, wrapfig}
+\usepackage{graphicx}
 \usepackage{float}
 \usepackage{amsmath,mathtools,amsthm,amsfonts,amssymb,latexsym,bm}
 \usepackage{mathrsfs}
@@ -11,6 +11,8 @@
 \usepackage{gensymb, multicol}
 \usepackage{hyperref}
 \usepackage{tcolorbox}
+\usepackage{caption}
+\usepackage{subcaption}
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -46,6 +48,7 @@
 }
 \newlength{\rowidth}% row operation width
 \AtBeginDocument{\setlength{\rowidth}{3em}}
+%\renewcommand\thesubfigure{\arabic{figure}}
 
 
 \usepackage{blindtext}
@@ -756,7 +759,7 @@ which can be simplified as $$p \cdot z(p) = 0$$
 \href{https://en.wikipedia.org/wiki/Walras%27s_law}{(Source)}
 
 \subsection{Edgeworth box}
-In economics, an Edgeworth box (or Edgeworth-Bowley box), is a graphical representation of a closed market with just two commodities, x and y, and two consumers. 
+In economics, an Edgeworth box (or Edgeworth-Bowley box), is a graphical representation of a closed market with just two commodities, X and Y, and two consumers. 
 The dimensions of the box are the total quantities $\Omega_x$ and $\Omega_y$ of the two goods. \\
 Let the consumers be Octavio and Abby. The top right-hand corner of the box represents the allocation in which Octavio holds all the goods, while the bottom left corresponds to complete ownership by Abby. 
 Points within the box represent ways of allocating the goods between the two consumers.
@@ -777,8 +780,69 @@ Exchange within the market starts from an initial allocation known as an endowme
 Since there are only two commodities the effective price is the exchange rate between them. Our aim is to find the price at which market equilibrium can be attained, which will be a point at which no further 
 transactions are desired, starting from a given endowment. These quantities will be determined by the indifference curves of the two consumers.
 We shall assume that every day Octavio and Abby go to market with endowments $(\omega_x, \omega_y )$ and $(\Omega_x - \omega_x , \Omega_y - \omega_y )$ of the two commodities, corresponding to the position $\mathbf{\omega}$. 
-in the diagram. The two consumers will exchange between themselves under competitive market behaviour. 
+in the diagram. The two consumers will exchange between themselves under competitive market behaviour. \\
+If two X's exchange for a single Y, then Octavio's and Abby's transaction will take them to some point along the solid grey line, which is known as a budget line.
+Budget lines for a couple of other prices are also shown as dashed and dotted lines in Fig. 3.a.
+The equilibrium corresponding to a given endowment $\omega$ is determined by the pair of indifference curves which have a common tangent such that this tangent passes through $\omega$. We will use the term 'price line' to denote a common tangent to two indifference curves. 
+An equilibrium therefore corresponds to a budget line which is also a price line, and the price at equlibrium is the gradient of the line. 
+In Fig.3.b.  $\omega$ is the endowment and $\omega '$ is the equilibrium allocation.
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=\textwidth]{./Curves/Edgeworthexample2.png}
+        \caption{Edgeworth box market}
+        \label{fig:3a}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=\textwidth]{./Curves/Edgeworthexample3.png}
+        \caption{Equilibrium in an Edgeworth box}
+        \label{fig:3b}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=\textwidth]{./Curves/Edgeworthexample4.png}
+        \caption{Division of a neighbourhood by crossing indifference curves}
+        \label{fig:3c}
+    \end{subfigure}
+            
+    \caption{Edgeworth boxes}
+    \label{fig:two curves}
+\end{figure}
+
+Firstly, any point in the box must lie on exactly one of Abby's indifference curves and on exactly one of Octavio's. If the curves cross (as shown in Fig. 3.c.) then they divide the immediate neighbourhood into four regions, 
+one of which (shown as pale green) is preferable for both consumers; therefore a point at which indifference curves cross cannot be an equlibrium, and an equilibrium must be a point of tangency.
+Secondly, the only price which can hold in the market at the point of tangency is the one given by the gradient of the tangent, since at only this price will the consumers be willing to accept limitingly small exchanges.
+And thirdly (the most difficult point) all exchanges taking the consumers on the path from $\omega$ to equilibrium must take place at the same price. 
+If this is accepted, then that price must be the one operative at the point of tangency, and the result follows. \\
+
+\underline{Pareto Set} \\
+An allocation of goods is said to 'Pareto dominate' another if it is preferable for one consumer and no worse for the other. An allocation is said to be 'Pareto optimal' (or 'Pareto efficient') if no other allocation Pareto dominates it. The set of Pareto optimal allocations is known as the Pareto 
+set (or 'efficient locus'). \\
+Consider a pair of tangential curves, one for each consumer as illustrated in Fig. 4.a., where the point of tangency is shown by the purple dot. Then convexity guarantees that the curves cannot intercept other than at the point of tangency, and the box is accordingly divided into 3 regions. The pale blue 
+area is preferable to the point of tangency for Octavio but worse for Abby; the pale orange area is preferable for Abby but worse for Octavio; and the white area is worse for both. Similar 
+considerations apply to the boundaries. It follows that the point of tangency is Pareto optimal. \\ 
+Thus the Pareto set is the locus of points of tangency of the curves. This is a line connecting Octavio's origin (O) to Abby's (A). An example is shown in Fig. 4.b., where the purple line is the Pareto set corresponding to the indifference curves for the two consumers.
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=\textwidth]{./Curves/pareto1.png}
+        \caption{Division of the box by two tangential indifference curves}
+        \label{fig:4a}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=\textwidth]{./Curves/pareto2.png}
+        \caption{Pareto set (purple line) for an Edgeworth box}
+        \label{fig:4b}
+    \end{subfigure}
+            
+    \caption{Pareto Set}
+    \label{fig:pareto curves}
+\end{figure}
 
 \href{https://en.wikipedia.org/wiki/Edgeworth_box}{(Source)}
+
+
 \end{document}
 
