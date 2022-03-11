@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.2.7)  2 MAR 2022 09:23
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.2.7)  11 MAR 2022 14:50
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -579,10 +579,21 @@ Package caption Info: listings package is loaded.
 Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
 \c@subfigure=\count322
 \c@subtable=\count323
+) (c:/texlive/2021/texmf-dist/tex/generic/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks43
+\SOUL@lasttoken=\toks44
+\SOUL@cmds=\toks45
+\SOUL@buffer=\toks46
+\SOUL@token=\toks47
+\SOUL@spaceskip=\skip64
+\SOUL@ttwidth=\dimen279
+\SOUL@uldp=\dimen280
+\SOUL@ulht=\dimen281
 ) (c:/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-\rowidth=\skip64
+\rowidth=\skip65
  (c:/texlive/2021/texmf-dist/tex/latex/blindtext/blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
  (c:/texlive/2021/texmf-dist/tex/latex/tools/xspace.sty
@@ -620,42 +631,42 @@ File: l3backend-xetex.def 2022-01-12 L3 backend support: XeTeX
 ) (./Research Notes.aux)
 \openout1 = `"Research Notes.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 63.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 61.
  (c:/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
 \c@lstlisting=\count349
 \symgns@font=\mathgroup12
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/lmr/m/n --> TS1/lmr/b/n on input line 63.
-Package gensymb Info: Math companion symbols declared on input line 63.
-LaTeX Info: Redefining \degree on input line 63.
-LaTeX Info: Redefining \celsius on input line 63.
-Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 63.
-LaTeX Info: Redefining \ohm on input line 63.
-Package gensymb Info: Using \textohm for \ohm on input line 63.
-Package gensymb Info: Using \textmu for \micro on input line 63.
-Package hyperref Info: Link coloring OFF on input line 63.
+(Font)                  TS1/lmr/m/n --> TS1/lmr/b/n on input line 61.
+Package gensymb Info: Math companion symbols declared on input line 61.
+LaTeX Info: Redefining \degree on input line 61.
+LaTeX Info: Redefining \celsius on input line 61.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 61.
+LaTeX Info: Redefining \ohm on input line 61.
+Package gensymb Info: Using \textohm for \ohm on input line 61.
+Package gensymb Info: Using \textmu for \micro on input line 61.
+Package hyperref Info: Link coloring OFF on input line 61.
  (c:/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (c:/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
@@ -665,30 +676,30 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count350
 )
-LaTeX Info: Redefining \ref on input line 63.
-LaTeX Info: Redefining \pageref on input line 63.
-LaTeX Info: Redefining \nameref on input line 63.
+LaTeX Info: Redefining \ref on input line 61.
+LaTeX Info: Redefining \pageref on input line 61.
+LaTeX Info: Redefining \nameref on input line 61.
  (./Research Notes.out) (./Research Notes.out)
 \@outlinefile=\write4
 \openout4 = `"Research Notes.out"'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 66.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 64.
  (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 66.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 64.
  (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 66.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 64.
  (c:/texlive/2021/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 66.
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 66.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 64.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 64.
  (c:/texlive/2021/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) (./Research Notes.toc
@@ -703,17 +714,17 @@ LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
 \openout5 = `"Research Notes.toc"'.
 
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 73--76
+Underfull \hbox (badness 10000) in paragraph at lines 72--75
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
 [3] [4] [5] [6] [7] [8] [9] [10] [11]
-Overfull \hbox (52.84001pt too wide) in paragraph at lines 389--389
+Overfull \hbox (52.84001pt too wide) in paragraph at lines 388--388
 []\TU/lmr/m/n/12 Another common form for utility is the $[]$
  []
 
@@ -725,42 +736,42 @@ File: ./Curves/C.png Graphic file (type bmp)
 File: ./Curves/S.png Graphic file (type bmp)
 <./Curves/S.png>
  [13]
-Underfull \hbox (badness 10000) in paragraph at lines 477--479
+Underfull \hbox (badness 10000) in paragraph at lines 482--484
 
  []
 
 [14] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 502--504
+Underfull \hbox (badness 10000) in paragraph at lines 507--509
 
  []
 
 [16] [17] [18] [19]
-Underfull \hbox (badness 10000) in paragraph at lines 675--678
+Underfull \hbox (badness 10000) in paragraph at lines 680--683
 
  []
 
 [20]
 Missing character: There is no ∆ (U+2206) in font [lmroman12-regular]:mapping=tex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 684--687
+Underfull \hbox (badness 10000) in paragraph at lines 689--692
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 688--690
+Underfull \hbox (badness 10000) in paragraph at lines 693--695
 
  []
 
-[21]
-Underfull \hbox (badness 10000) in paragraph at lines 691--694
+
+Underfull \hbox (badness 10000) in paragraph at lines 696--699
 
  []
 
-[22] [23] [24]
+[21] [22] [23] [24]
 File: ./Curves/Edgeworthexample1.png Graphic file (type bmp)
 <./Curves/Edgeworthexample1.png>
  [25]
-Underfull \hbox (badness 10000) in paragraph at lines 775--778
+Underfull \hbox (badness 10000) in paragraph at lines 780--783
 
  []
 
@@ -771,7 +782,7 @@ File: ./Curves/Edgeworthexample3.png Graphic file (type bmp)
 File: ./Curves/Edgeworthexample4.png Graphic file (type bmp)
 <./Curves/Edgeworthexample4.png>
 [26]
-Underfull \hbox (badness 10000) in paragraph at lines 813--818
+Underfull \hbox (badness 10000) in paragraph at lines 818--823
 
  []
 
@@ -780,17 +791,17 @@ File: ./Curves/pareto1.png Graphic file (type bmp)
 <./Curves/pareto1.png>
 File: ./Curves/pareto2.png Graphic file (type bmp)
 <./Curves/pareto2.png>
- [28] [29] (./Research Notes.aux)
+ [28] (./Research Notes.aux)
 Package rerunfilecheck Info: File `"Research Notes".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
  ) 
 Here is how much of TeX's memory you used:
- 23851 strings out of 476182
- 437904 string characters out of 5813140
- 1281203 words of memory out of 5000000
- 44163 multiletter control sequences out of 15000+600000
- 486659 words of font info for 109 fonts, out of 8000000 for 9000
+ 24038 strings out of 476182
+ 440471 string characters out of 5813140
+ 1284685 words of memory out of 5000000
+ 44345 multiletter control sequences out of 15000+600000
+ 486972 words of font info for 110 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  83i,16n,80p,680b,1971s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Research Notes.xdv (29 pages, 730784 bytes).
+Output written on Research Notes.xdv (28 pages, 731192 bytes).

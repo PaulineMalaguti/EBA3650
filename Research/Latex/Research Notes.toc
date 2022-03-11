@@ -10,15 +10,14 @@
 \contentsline {subsection}{\numberline {}Newton's formula}{8}{subsection.4.1}%
 \contentsline {subsection}{\numberline {}Python Implementation}{9}{subsection.4.2}%
 \contentsline {section}{\numberline {}Utility Functions}{12}{section.5}%
-\contentsline {subsection}{\numberline {}Cobb-Douglas Utility Function}{12}{subsection.5.1}%
-\contentsline {subsection}{\numberline {}Constant Elasticity of Substitution (CES)}{12}{subsection.5.2}%
-\contentsline {subsection}{\numberline {}Quasilinear Utility Functions}{13}{subsection.5.3}%
+\contentsline {subsection}{\numberline {}Constant Elasticity of Substitution (CES)}{12}{subsection.5.1}%
+\contentsline {subsection}{\numberline {}Quasilinear Utility Functions}{13}{subsection.5.2}%
 \contentsline {section}{\numberline {}Slutsky decomposition: Income and substitution effects}{14}{section.6}%
 \contentsline {subsection}{\numberline {}Normal Goods}{14}{subsection.6.1}%
 \contentsline {subsection}{\numberline {}Income Inferior Goods}{14}{subsection.6.2}%
 \contentsline {subsection}{\numberline {}Griffon Goods}{14}{subsection.6.3}%
-\contentsline {section}{\numberline {}Microeconomy}{15}{section.7}%
-\contentsline {subsection}{\numberline {}The intertemporal utility function}{15}{subsection.7.1}%
+\contentsline {section}{\numberline {}Microeconomy}{14}{section.7}%
+\contentsline {subsection}{\numberline {}The intertemporal utility function}{14}{subsection.7.1}%
 \contentsline {subsection}{\numberline {}Monopoly}{20}{subsection.7.2}%
 \contentsline {subsection}{\numberline {}Expenditure functions}{22}{subsection.7.3}%
 \contentsline {subsection}{\numberline {}Hicksian demand function}{23}{subsection.7.4}%

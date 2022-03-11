@@ -13,6 +13,8 @@
 \usepackage{tcolorbox}
 \usepackage{caption}
 \usepackage{subcaption}
+%\usepackage{natbib} 
+\usepackage{soul}
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -56,15 +58,12 @@
 \date{\today}
 \author{Pauline Malaguti}
 
-
-
-
-
 \begin{document}
 
 \maketitle
-
-This file was created to contain explanations and code examples for the course EBA3650 Quantitative Economics at BI Norwegian Business School.
+This document was created to gather various explanations for the course Quantitative Economics at BI Norwegian Business School. 
+I am not the direct author of the material in this document.
+In each part, it is possible to find the original source by clicking on 'Source'. 
 
 \tableofcontents
 
@@ -78,7 +77,7 @@ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 \notag
 \end{equation}
 
-\href{https://personal.math.ubc.ca/~pwalls/math-python/roots-optimization/root-finding/}{Source}
+\href{https://personal.math.ubc.ca/~pwalls/math-python/roots-optimization/root-finding/}{\hl{Source}}
 
 \section{Bisection Method}
 The algorithm applies to any continuous function $f(x)$ on an interval a,b where the value of the function $f(x)$ changes sign from $a$ to $b$ . The idea is simple: divide the interval in two, a solution must exist within one subinterval, select the subinterval where the sign of $f(x)$ changes and repeat. \\
@@ -156,7 +155,7 @@ def bisection(f,a,b,N):
 
 \end{lstlisting}
 
-\href{https://personal.math.ubc.ca/~pwalls/math-python/roots-optimization/bisection/}{Source}
+\href{https://personal.math.ubc.ca/~pwalls/math-python/roots-optimization/bisection/}{\hl{Source}}
 
 
 \section{Secant method}
@@ -256,7 +255,7 @@ def secant(f,a,b,N):
 
 
 \end{lstlisting}
-\href{https://personal.math.ubc.ca/~pwalls/math-python/roots-optimization/secant/}{Source}
+\href{https://personal.math.ubc.ca/~pwalls/math-python/roots-optimization/secant/}{\hl{Source}}
 
 \section{Newton Method}
 Newton's method is a root finding method that uses linear approximation. In particular, we guess a solution $x_{0}$ of the equation $f(x)=0$, compute the linear approximation of $f(x)$ at $x_{0}$  and then find the $x$-intercept of the linear approximation.
@@ -333,7 +332,7 @@ The function may terminate in 3 ways:
     return None
     
     \end{lstlisting}
-    \href{https://personal.math.ubc.ca/~pwalls/math-python/roots-optimization/newton/}{Source}
+\href{https://personal.math.ubc.ca/~pwalls/math-python/roots-optimization/newton/}{\hl{Source}}
 
 Lecture Code: Newton Solver, we try to find $x$ such that $f(x)=0$.
 \begin{lstlisting}[frame=single]
@@ -390,7 +389,7 @@ There are several classes of utility functions that are frequently used to gener
     \item A third common utility function is \underline{quadratic}, which has the form  $$u(x,y) = 2ax - (b-y)^{2}$$
 \end{itemize}
 
-\subsection{Cobb-Douglas Utility Function}
+%\subsection{Cobb-Douglas Utility Function}
 
 \subsection{Constant Elasticity of Substitution (CES)}
 The constant elasticity of substitution applied to utility can use the formula
@@ -428,6 +427,8 @@ Conquences of variations of $r$:
     \label{fig:Utility Curves} 
 \end{figure}  
 
+\href{https://en.wikipedia.org/wiki/Constant_elasticity_of_substitution}{\hl{Source}}
+
 \subsection{Quasilinear Utility Functions}
 Utility function that is independent of the income effect. 
 \begin{equation}
@@ -454,6 +455,8 @@ Marginal rate of substitution is computed by
     \end{split}    
 \end{equation}
 
+\href{https://www.core-econ.org/the-economy/book/text/leibniz-05-04-01.html}{\hl{Source}}
+
 \section{Slutsky decomposition: Income and substitution effects}
 Slutsky decomposition is the total effect of substitution and income. 
 
@@ -471,6 +474,8 @@ Extreme income-inferiority, the income effect may be larger in size than the sub
 demanded to fall as own-prices rises. \\
 Slutsky's decomposition of the effect of a price change into a pure substitution effect and an income effect thus explains why the law of downwards-slopping
 demand is violated for extremely income-inferior goods.  
+
+\href{https://www.lancaster.ac.uk/staff/desilvad/Varian9e_LecturePPTs_Ch08.pdf}{\hl{Source}}
 
 \section{Microeconomy}
 \subsection{The intertemporal utility function}
@@ -500,7 +505,7 @@ $$ c_{t = 1} = e_1 + s \times (1+r)$$
 where $r$ is the interest rate ($s$ will be negative if the consumer borrows money.) Since $e_1$ is in tomorrow's money, we have to multiply the savings we bring forward by $(1 + r)$ to We can put this into our 
 numerical framework by substituting for $s$, giving a budget constraint 
 $$ c_{t = 1} = e_1+ (e_0- c_{t = 0}) \times (1+r)$$
-\href{https://web.econ.ku.dk/okocg/VM/VM-general/Kapitler%20til%20bog/Ch9-2016-1.pdf}{(Source)} \\
+\href{https://web.econ.ku.dk/okocg/VM/VM-general/Kapitler%20til%20bog/Ch9-2016-1.pdf}{\hl{Source}} \\
 
 Code: Visualise the changes in consumption combination (indifference curve) when the interest rate varies. 
 \begin{lstlisting}[frame=single]
@@ -692,7 +697,7 @@ Suppose the demand for a good produced by a monopolist is $p = A - BQ$. Note tha
 Thus $TR = (A - BQ) \times Q$, or $TR = AQ - BQ^{2}$. 
 In other words, for an inverse demand curve, $p = A - BQ$, the marginal revenue curve is $MR = A - 2BQ$. \\
 
-\href{https://open.oregonstate.education/intermediatemicroeconomics/chapter/module-15/}{(Source)}
+\href{https://open.oregonstate.education/intermediatemicroeconomics/chapter/module-15/}{\hl{Source}}
 
 \subsection{Expenditure functions}
 The expenditure function gives the \underline{minimum amount of money} an individual needs to spend to achieve some level of utility, given a utility function and the prices of the available goods. \\
@@ -713,7 +718,7 @@ Properties of the expenditure function :
     buy a unique ideal amount of each item to minimize the price for obtaining a certain level of utility given the price of goods in the market. \href{https://en.wikipedia.org/wiki/Shephard%27s_lemma}{(Source)}
 \end{tcolorbox}
     
-\href{https://en.wikipedia.org/wiki/Expenditure_function}{(Source)}
+\href{https://en.wikipedia.org/wiki/Expenditure_function}{\hl{Source}}
 
 \subsection{Hicksian demand function}
 A consumer's Hicksian demand function or compensated demand function for a good is his quantity demanded as part of the solution to minimizing his expenditure on all goods while delivering a fixed level of utility. \\ Essentially, a Hicksian demand function shows how an 
@@ -736,7 +741,7 @@ Hicksian demand always slopes down.
     The price rise has both a substitution effect and an income effect. The substitution effect is the change in quantity demanded due to a price change that alters the slope of the budget constraint but leaves the consumer on the same indifference curve 
     (i.e., at the same level of utility). The substitution effect always is to buy less of that good. The income effect is the change in quantity demanded due to the effect of the price change on the consumer's total buying power. 
 \end{tcolorbox}
-\href{https://en.wikipedia.org/wiki/Hicksian_demand_function}{(Source)}
+\href{https://en.wikipedia.org/wiki/Hicksian_demand_function}{\hl{Source}}
 
 \subsection{Walras's law}
 Walras's law is a principle in general equilibrium theory asserting that budget constraints imply that the values of excess demand (or, conversely, excess market supplies) 
@@ -756,7 +761,7 @@ The excess in demand function is computed by: $$ z(p) = \sum_{i=1}^{n} (x_i(p \c
 The budget constraint here is : $$p \cdot x_i = p \cdot E_i \mbox{ for each } i$$
 The excess in demand can be rewritten as $$ p \cdot z(p) = \sum_{i=1}^{n} (p \cdot x_i(p \cdot E_i) -  p \cdot E_i) $$
 which can be simplified as $$p \cdot z(p) = 0$$
-\href{https://en.wikipedia.org/wiki/Walras%27s_law}{(Source)}
+\href{https://en.wikipedia.org/wiki/Walras%27s_law}{\hl{Source}}
 
 \subsection{Edgeworth box}
 In economics, an Edgeworth box (or Edgeworth-Bowley box), is a graphical representation of a closed market with just two commodities, X and Y, and two consumers. 
@@ -841,8 +846,13 @@ Thus the Pareto set is the locus of points of tangency of the curves. This is a 
     \label{fig:pareto curves}
 \end{figure}
 
-\href{https://en.wikipedia.org/wiki/Edgeworth_box}{(Source)}
+\href{https://en.wikipedia.org/wiki/Edgeworth_box}{\hl{Source}}
 
+%\bibliography{myrefs, hisrefs, herrefs}
+
+%\bibliographystyle{apalike} 
+%\nocite{*}
+%\bibliography{myrefs}
 
 \end{document}
 

@@ -1,9 +1,9 @@
 # Fdb version 3
-["xdvipdfmx"] 1646209402 "Research Notes.xdv" "Research Notes.pdf" "Research Notes" 1646209405
-  "Research Notes.xdv" 1646209401 730784 a0de19d55eb91c6cb4d41097b92d4690 "xelatex"
+["xdvipdfmx"] 1647006626 "Research Notes.xdv" "Research Notes.pdf" "Research Notes" 1647006627
+  "Research Notes.xdv" 1647006625 731192 307b4fc6f85e594f785e720e68208918 "xelatex"
   (generated)
   "Research Notes.pdf"
-["xelatex"] 1646209396 "g:/My Drive/BA3/Second semester/Quantitative Economics/Research/Latex/Research Notes.tex" "Research Notes.xdv" "Research Notes" 1646209404
+["xelatex"] 1647006622 "g:/My Drive/BA3/Second semester/Quantitative Economics/Research/Latex/Research Notes.tex" "Research Notes.xdv" "Research Notes" 1647006627
   "Curves/C.png" 1644675440 2355 d28d2474a014f730e919c76cb2824b5f ""
   "Curves/CD.png" 1644675440 1753 233a6e2bfa8b32859412b278df762f89 ""
   "Curves/Edgeworthexample1.png" 1646129924 55400 3988223289413069731919e4c0e1286d ""
@@ -13,12 +13,13 @@
   "Curves/S.png" 1644675440 3123 25cd2d82a6d4de7868b74290853102df ""
   "Curves/pareto1.png" 1646209221 13056 c9a9dad89334a1c4a9b335849530a3aa ""
   "Curves/pareto2.png" 1646209231 75062 8e5c9ececffe663070f15ce06f4f66bc ""
-  "Research Notes.aux" 1646209401 5877 0e54279c2530f4b60494255e94184fb9 "xelatex"
-  "Research Notes.out" 1646209401 4065 b9759d3254a8fd57916ba7b2fbfa5d24 "xelatex"
-  "Research Notes.tex" 1646209395 45625 5619ab7fe210e5c753cbb9803a2bdfa6 ""
-  "Research Notes.toc" 1646209401 2107 db2dcb1fc7d59b973996240c815a8805 "xelatex"
+  "Research Notes.aux" 1647006625 5743 2e1866943078d9788aa8c7fd2e0256dc "xelatex"
+  "Research Notes.out" 1647006625 3856 ceae788639d9069ba37c44e42998868c "xelatex"
+  "Research Notes.tex" 1647006617 46214 02468f351cb5e2ac4cfd20bf66be6de6 ""
+  "Research Notes.toc" 1647006625 2014 9eb5b3913d1f29fdd11285cb39222d48 "xelatex"
   "c:/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1644235735 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1644238214 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
+  "c:/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1644235497 1536 06717a2b50de47d4087ac0e6cd759455 ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1644234647 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1644234647 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy8.tfm" 1644234647 1120 200be8b775682cdf80acad4be5ef57e4 ""
@@ -123,6 +124,7 @@
   "c:/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex" 1644236930 7251 fb18c67117e09c64de82267e12cd8aa4 ""
   "c:/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex" 1644236930 29274 e15c5b7157d21523bd9c9f1dfa146b8e ""
   "c:/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def" 1644236930 6825 a2b0ea5b539dda0625e99dd15785ab59 ""
+  "c:/texlive/2021/texmf-dist/tex/generic/soul/soul.sty" 1644237474 23636 c37eef0334dd2011d112d2040c11328f ""
   "c:/texlive/2021/texmf-dist/tex/generic/stringenc/stringenc.sty" 1644237534 21514 b7557edcee22835ef6b03ede1802dad4 ""
   "c:/texlive/2021/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty" 1644237972 7008 f92eaa0a3872ed622bbf538217cd2ab7 ""
   "c:/texlive/2021/texmf-dist/tex/latex/amscls/amsthm.sty" 1644234644 12594 0d51ac3a545aaaa555021326ff22a6cc ""
@@ -199,7 +201,7 @@
   "c:/texlive/2021/texmf-dist/web2c/texmf.cnf" 1644236190 40042 fe981136cbb5f3715ab1b0e46e3d3892 ""
   "c:/texlive/2021/texmf-var/web2c/xetex/xelatex.fmt" 1644238344 5131883 54eb016d2b7fadd3037cbb8cae1c1131 ""
   "c:/texlive/2021/texmf.cnf" 1644238239 713 e69b156964470283e0530f5060668171 ""
-  "g:/My Drive/BA3/Second semester/Quantitative Economics/Research/Latex/Research Notes.tex" 1646209395 45625 5619ab7fe210e5c753cbb9803a2bdfa6 ""
+  "g:/My Drive/BA3/Second semester/Quantitative Economics/Research/Latex/Research Notes.tex" 1647006617 46214 02468f351cb5e2ac4cfd20bf66be6de6 ""
   (generated)
   "Research Notes.aux"
   "Research Notes.log"
