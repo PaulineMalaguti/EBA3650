@@ -848,6 +848,53 @@ Thus the Pareto set is the locus of points of tangency of the curves. This is a 
 
 \href{https://en.wikipedia.org/wiki/Edgeworth_box}{\hl{Source}}
 
+
+\section{Game Theory} 
+\subsection{Nash Equilibrium} 
+
+Nash Equilibrium represents an action profile for all players in a game and is used to predict the outcome of their decision-making 
+interaction. It models a steady state (i.e., a combination of strategies of all players) 
+in which no player can benefit by unilaterally changing its strategy. \\
+If a unique Nash equilibrium exists for the game, then all players are expected to converge to the state represented by the equilibrium 
+if they are all rational - that is, each player aims to choose the strategy that maximizes its utility function. \\
+
+\underline{Pure Nash Equilibrium Strategy} \\
+A pure-strategy Nash equilibrium is an action profile with the property that no single player $i$ can obtain a higher payoff by choosing 
+an action different from $a_i$, given every other player $j$ adheres to $a_j$. \\
+
+For example, a game involves two players, each of whom could choose two available actions, which are X and Y. If the players choose different actions, 
+they each get a payoff of 0. If they both choose X, they each get 2, and if they both choose Y, they each get 1. The action profile (Y, Y) is an equilibrium, 
+since if any one player chooses X, it would result in a lower payoff for the player. Similarly, the action profile (X, X) is also an equilibrium. 
+Such Nash equilibrium maintains a steady state that every player's behavior is the same whenever she or he plays the game. \\
+
+\underline{Mixed Nash Equilibrium Strategy} \\
+A mixed-strategy Nash equilibrium is a mixed strategy action profile with the property that no single player can obtain a higher expected payoff (utility) 
+according to the player's preference over all such lotteries. \\
+
+Thus, in the above example, there is a third equilibrium that each player has a mixed strategy (1/3, 2/3) assigning action X with probability 1/3 
+and Y with probability 2/3.
+
+\href{https://www.sciencedirect.com/science/article/pii/B9780124158153000029}{\hl{Source}}
+
+\subsection{Dominant Strategy}
+In game theory, strategic dominance (commonly called simply dominance) occurs when one strategy is better than another strategy for one player, no matter 
+how that player's opponents may play. \\
+
+\underline{Terminology}
+\begin{itemize}
+    \item Strategy B is \underline{strictly dominant} if strategy B strictly dominates every other possible strategy.
+    \item Strategy B is \underline{weakly dominant} if strategy B weakly dominates every other possible strategy.
+    \item Strategy B is \underline{strictly dominated} if some other strategy exists that strictly dominates B.
+    \item Strategy B is \underline{weakly dominated} if some other strategy exists that weakly dominates B.
+\end{itemize}
+
+\underline{Dominance and Nash Equilibria} \\
+If a strictly dominant strategy exists for one player in a game, that player will play that strategy in each of the game's Nash equilibria. 
+If both players have a strictly dominant strategy, the game has only one unique Nash equilibrium. However, that Nash equilibrium is 
+not necessarily "efficient", meaning that there may be non-equilibrium outcomes of the game that would be better for both players. \\
+Strictly dominated strategies cannot be a part of a Nash equilibrium, and as such, it is irrational for any player to play them. On the other hand, 
+weakly dominated strategies may be part of Nash equilibria.
+\href{https://en.wikipedia.org/wiki/Strategic_dominance}{\hl{Source}}
 %\bibliography{myrefs, hisrefs, herrefs}
 
 %\bibliographystyle{apalike} 

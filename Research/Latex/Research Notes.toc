@@ -23,3 +23,6 @@
 \contentsline {subsection}{\numberline {}Hicksian demand function}{23}{subsection.7.4}%
 \contentsline {subsection}{\numberline {}Walras's law}{24}{subsection.7.5}%
 \contentsline {subsection}{\numberline {}Edgeworth box}{25}{subsection.7.6}%
+\contentsline {section}{\numberline {}Game Theory}{29}{section.8}%
+\contentsline {subsection}{\numberline {}Nash Equilibrium}{29}{subsection.8.1}%
+\contentsline {subsection}{\numberline {}Dominant Strategy}{30}{subsection.8.2}%
